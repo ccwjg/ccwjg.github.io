@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 85%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two,
+.emaillink{
+  font-size: 14px;
+  color: #646464;
+}
+.container .content .right-side{
+  width: 70%;
+  margin-left: 80px;
+  margin-right: 200px;
+}
+.content .right-side .topic-text{
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+
+}
+.right-side .input-box{
+  height: 70px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 140px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="submit"]{
+  color: black;
+  font-size: 18px;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid black;
+}
+.button input[type="submit"]:hover{
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+#socialhover li a:hover{
+    color: red;
+
+}
+
+.text-one a:hover{
+  color: red;
+
+}
+
+
+@media (max-width: 768px) {
+
+  .container .content{
+    flex-direction: column;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-right: 50px;
+ }
+
+ @media (max-width: 300px) {
+
+  .container .content{
+    flex-direction: column;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-right: 50px;
+ }
+
+
+
+.content .right-side .topic-text{
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+
+}
+
+.right-side  p{
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+
+}  
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 140px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="submit"]{
+  color: black;
+  font-size: 14px;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid black;
+}
+
+ 
+}
+}

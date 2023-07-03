@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+.title h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.ccontainer{
+    /* width: 1140px; */
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.ccontainer2 img{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+#PDF{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 960px;
+    height: 540px;
+}
+
+.maincontent{
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.aboutc{
+    max-width: 540px;
+    padding-left: 0px;
+}
+
+
+
+.creditc{
+    max-width: 400px;
+    padding-left: 50px;
+}
+
+
+.aboutc h2{
+    color: black;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.creditc h2{
+    color: black;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+
+.aboutc p{
+    color: black;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 54px;
+}
+
+.creditc p{
+    color: black;
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 54px;
+
+}
+
+
+@media only screen and (max-width:1000px){
+
+    .title h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-decoration: underline;
+        font-size: 30px;
+    }
+
+    .ccontainer iframe{
+        width: 1140px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-height: 300px;
+    }
+
+    .ccontainer2 img{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        max-height: 300px;
+    }
+
+    #PDF{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        max-height: 300px;
+    }
+    
+    .maincontent{
+ 
+        width: 100%;
+        flex-direction: column;
+}
+
+.creditc ,.aboutc{
+    max-width: 500px;
+    padding-left: 10px;
+}
+}
